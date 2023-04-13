@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="estilo.css"> <!--estilo-->
+    <title>Catalogo de Autos Toyota</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+
+    <header>
+        <h1>Tomyota-Conorauto</h1>
+        <h2> Seguridad, calidad y garantia </h2><!--Eslogan-->
+
+    </header>
+
+    <hr><!--Horizontal rect-->
+
+    <!--Navigation-->
+    <nav>
+        <!--Lista desorndenada-->
+        <ul>
+            <!--Item de lista-->
+            <li class="nav_item"><a href="index.html">Inicio</a> </li>
+            <li class="nav_item"><a href="about.html">Quienes Somos</a> </li>
+            <li class="nav_item"><a href="contacto.html">Contactenos</a> </li>
+            <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Carrito</button></li>
+        </ul>
+
+    </nav>
+    <!-- Modal -->
+    <div id="exampleModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Su carrito esta actualmente vacio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">Limpiar</button>
+                    <button type="button" class="btn btn-primary">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr><!--Horizontal rect-->
+
+
+    <!--Parte principal-->
+    <main>
+        <!--Seccion de catalogo-->
+        <section id="article-container">
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>Rav 4</h3> <!--Titulo del producto-->
+                    <picture>
+                        <img src="rav4_blanco040_03.png" alt="Camioneta Rav4 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 25.000.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>Tacoma</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/tacoma.jpg" alt="Camioneta Tacoma 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 35.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>Tundra</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/tundra.jpg" alt="Camioneta Tundra 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 33.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>4Runner</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/4runner.jpg" alt="Camioneta 4Runner 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 38.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>Sequola</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/sequola.jpg" alt="Camioneta Sequola 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 37.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>C-HR</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/C-HR.jpg" alt="Camioneta C-HR 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 35.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <article class="column center">
+                        <h3>Land Crusier</h3><!--Titulo del producto-->
+                        <picture>
+                            <img src="img/Land Cruiser.webp" alt="Camioneta Land Crusier 2023"
+                                style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                        </picture>
+                        <p>$/ 23.999.00</p><!--Precio-->
+                        <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                    </article>
+            </div>
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>HIighlander</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/AA17hEKi.jpg" alt="Camioneta HIighlander 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 23.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>Hilux</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/HILUX.jpg" alt="Camioneta Hilux 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 29.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+            <!--Articulos-->
+            <div class="group">
+                <article class="column center">
+                    <h3>FJ Cruiser</h3><!--Titulo del producto-->
+                    <picture>
+                        <img src="img/FJ Cruiser.jpg" alt="Camioneta FJ Cruiser 2023"
+                            style="width: 400px;height: 400px;"><!--Se inserta la imagen con sus medidas-->
+                    </picture>
+                    <p>$/ 27.999.00</p><!--Precio-->
+                    <button class="add-to-cart">Agregar al carrito</button> <!--Boton agregar al carrito-->
+                </article>
+            </div>
+
+
+        </section>
+
+    </main>
+    <!-- Pie de pagina   -->
+    Creado por Marco Chqoue - 2023
+
+    <!-- Pie de pagina   -->
+    <script src="jcustom.js"></script>
+</body>
+
+</html>

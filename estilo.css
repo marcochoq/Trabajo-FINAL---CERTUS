@@ -1,0 +1,154 @@
+/* Importa las fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,100&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Estilo del encabezado */
+header {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(247, 49, 49);
+  background-color: bisque;
+  background-image: url(img/fono.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+
+/* Estilo del encabezado */
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+/*establecen el estilo del cuerpo de la página web*/
+body {
+  background: #004FF9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFF94C, #004FF9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFF94C, #004FF9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: #333;
+  overflow: hidden;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+  background-color: #e94747;
+}
+
+
+
+/* Estilo de las imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #e74c3c;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+/* Efecto de transición al pasar el cursor sobre las imágenes */
+img:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+
+/*se aplica al contenedor que contiene todos los artículos.*/
+#article-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*se aplica a cada grupo de artículos*/
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  width: calc(33.33% - 20px);
+}
+
+
+.group:last-child {
+  margin-right: 0;
+}
+
+/*es un selector que se aplica a cada artículo dentro de un grupo*/
+.group article {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/*se aplica a los títulos de los artículos.*/
+.group h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*se aplica a los párrafos de los artículos*/
+.group p {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/*se aplica el boton anadir al carrito*/
+.add-to-cart {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px; /*se agrega un borde al boton*/
+  cursor: pointer;/*cursor del mouse cambie a una mano al pasar sobre el botón*/
+  transition: background-color 0.5s ease; /*agregamos la transicion al fondo*/
+}
+
+.add-to-cart:hover {
+  background-color: #3e8e41; /*cambiamos el color de fondo en hover*/
+}
+
+nav {
+  background-color: #faf9f9;
+  overflow: hidden;
+}
+

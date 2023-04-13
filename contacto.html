@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Contacténos</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="background-color: darkcyan;">Toyota Conauto</h1>
+        <h2>Seguridad, calidad y garantía</h2>
+    </header>
+
+    <nav>
+        <p><a href="index.html">Volver atrás</a></p>
+    </nav>
+
+    <main>
+        <section id="formContacto">
+            <h3>Escríbanos ahora</h3>
+            <form action="contactoRegistro.html" method="get">
+                <div>
+                    <label for="txtNombre">Ingrese su nombre</label>
+                    <input type="text" name="txtNombre" id="txtNombre" maxlength="50" required>
+                </div>
+                <div>
+                    <label for="txtApellido">Ingrese su apellido</label>
+                    <input type="text" name="txtApellido" id="txtApellido" autocomplete="off" maxlength="54" required>
+                </div>
+                <div>
+                    <label for="txtdni">Ingrese su DNI</label>
+                    <input type="text" name="txtdni" id="txtdni" autocomplete="off" maxlength="8" required>
+                </div>
+                <div>
+                    <label for="txtEmail">Ingrese su correo electrónico</label>
+                    <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength="128" required>
+                </div>
+                <div>
+                    <label for="numPhone">Ingrese su teléfono o celular</label>
+                    <input type="tel" name="numPhone" id="numPhone" maxlength="13" minlength="9">
+                </div>
+                <div>
+                    <label for="txtDepartamento">Ingrese su Departamento</label>
+                    <input type="text" name="txtDepartamento" id="txtDepartamento" maxlength="100">
+                </div>
+                <div>
+                    <label for="txtDireccion">Ingrese su dirección</label>
+                    <input type="text" name="txtDireccion" id="txtDireccion" maxlength="128">
+                </div>
+                <div>
+                    <label for="txtAsunto">Escoja el asunto del mensaje</label>
+                    <select name="txtAsunto" id="txtAsunto" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="comprarMayor">Coche en forma de pago</option>
+                        <option value="consultaDevolucion">Consulta para averías en el vehículo</option>
+                        <option value="consultaGeneral">Hacer consulta general</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bodyDetalle">Ingrese su mensaje</label>
+                    <textarea name="bodyDetalle" id="bodyDetalle" cols="30" rows="8" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo">Autorizo el envío de publicidad e información comercial</label>
+                </div>
+
+                <!-- Input Submit / Botón de enviar -->
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+        </section>
+
+        <!-- Datos de contacto -->
+        <section id="ubicanos">
+            <p>Av. Alfonso Ugarte 205 <br>
+                Arequipa-Arequipa-Arequipa
+            </p>
+            <p>Télefono: 01 680 9999 / 999 555 555</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54557.39412565476!2d-71.56962161288982!3d-16.403847046474944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a93dafc02af%3A0x14b96eebf4941831!2sConauto!5e0!3m2!1ses!2spe!4v1680108495070!5m2!1ses!2spe"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
